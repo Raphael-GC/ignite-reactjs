@@ -21,5 +21,14 @@
 
 `yarn add babel-loader -D` <!--- Cuida da integração entre o Babel e o Webpack.-->
 
+`yarn add html-webpack-plugin -D` <!--- Retira a necessidade de usarmos a tag Script, apontando para o nosso arquivo Bundle.js (Build File), no arquivo index.html .-->
 
-`yarn add `
+`yarn add webpack-dev-server -D` <!--- Biblioteca que elimina a necessidade de executar o comando yarn webpack toda vez que modificamos o código, pois desta forma ele passa a observar o código e atualiza-lo automaticamente.-->
+
+`yarn add cross-env -D` <!--- Nos permite criar variaveis de ambiente, independentemente do SO que estivermos usando.-->
+
+`yarn add style-loader css-loader -D` <!--- Sao os LOADERS que utilizamos nas regras Webpack para que nosso arquivos CSS possam ser lidos pela aplicacao. ->
+
+`yarn add sass-loader -D` <!--- O mesmo dos loaders anteriores, mas este e especificos para arquivos SASS.-->
+
+`yarn add node-sass -D` <!--- Instalando o Pre-processador SASS, que amplia as possibilidades do CSS puro.-->
