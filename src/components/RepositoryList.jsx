@@ -6,14 +6,7 @@ export function RepositoryList() {
             <h1>Lista de repositórios</h1>
 
             <ul>
-                <li>
-                    <strong>{repositoryName}</strong>
-                    <p>Forms in React</p>
 
-                    <a href="">
-                        Acessar repositorios
-                    </a>
-                </li>
 
                 <li>
                     <strong>unform</strong>
