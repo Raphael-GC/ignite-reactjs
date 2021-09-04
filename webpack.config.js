@@ -1,5 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
 
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
@@ -16,18 +17,28 @@ module.exports = {
     },
     devServer: {
         contentBase: path.resolve(__dirname, 'public'),
+        hot: true,
     },
     plugins: [
+
+        isDevelopment && new ReactRefreshWebpackPlugin(),
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'public', 'index.html')
         })
-    ],
+    ].filter(Boolean), // É uma maneira para adicionarmos plugin de forma condicional no Webpack, pois quando retornar False (o que causaria um erro), o filter irá remover o boolean do codigo, e quando for True ele executara o codigo escrito ali.
     module: {
         rules: [
             {
                 test: /\.jsx$/,
                 exclude: /node_modules/,
-                use: 'babel-loader'
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        plugins: [
+                            isDevelopment && require.resolve('react-refresh/babel')
+                        ].filter(Boolean)
+                    }
+                }
             },
             {
                 test: /\.scss$/, // Poderiamos utilizar aqui o .sass, e eliminariamos a necessidade de utilizarmos as {}, ficando apenas a identacao.

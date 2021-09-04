@@ -32,3 +32,7 @@
 `yarn add sass-loader -D` <!--- O mesmo dos loaders anteriores, mas este e especificos para arquivos SASS.-->
 
 `yarn add node-sass -D` <!--- Instalando o Pre-processador SASS, que amplia as possibilidades do CSS puro.-->
+
+`yarn add -D @pmmmwh/react-refresh-webpack-plugin react-refresh` <!--- Nos permite fazer alteracoes em nosso codigo, refletir essas alteracoes no browser, mantendo o estado atual dos componentes. Uma aplicacao pratica seria em carrinho de compras por exemplo. Poderiamos fazer alteracoes no codigo durante o desenvolvimento, resetando a aplicacao, mas sem que os itens que ja estavam no carrinho fossem perdidos.-->
+
+``
