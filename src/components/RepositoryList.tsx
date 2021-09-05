@@ -3,10 +3,14 @@ import { RepositoryItem } from "./RepositoryItem";
 
 import '../styles/repositories.scss';
 
+interface Repository {
+    name: string;
+    description: string;
+    html_url: string;
+}
 
-
-export function RepositoryList() {
-    const [repositories, setRepositories] = useState([]) // Sempre comecamos o estado com utilizando uma variavel do tipo que pretendemos armazenar. Como no caso aqui queremos uma lista, comecamos com um array vazio.
+export function RepositoryList() { // Passamos um tipo pra um estado usando os <>. No exemplo abaixo, como era um array usamos [] ao lado do nome da interface.
+    const [repositories, setRepositories] = useState<Repository[]>([]) // Sempre comecamos o estado com utilizando uma variavel do tipo que pretendemos armazenar. Como no caso aqui queremos uma lista, comecamos com um array vazio.
 
     useEffect(() => {
         fetch('https://api.github.com/users/raphael-gc/repos') // Chamada para API para pegar os dados dos repositorios.
