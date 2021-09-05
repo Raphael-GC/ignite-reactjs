@@ -35,4 +35,10 @@
 
 `yarn add -D @pmmmwh/react-refresh-webpack-plugin react-refresh` <!--- Nos permite fazer alteracoes em nosso codigo, refletir essas alteracoes no browser, mantendo o estado atual dos componentes. Uma aplicacao pratica seria em carrinho de compras por exemplo. Poderiamos fazer alteracoes no codigo durante o desenvolvimento, resetando a aplicacao, mas sem que os itens que ja estavam no carrinho fossem perdidos.-->
 
-``
+`yarn add typescript -D`
+
+`yarn tsc --init` <!--- Este comando cria o arquivo tsconfig.json -->
+
+`yarn add @babel/preset-typescript -D` <!--- Por padrao o babel nao interpreta arquivos em typescript, e com isso habilitamos essa funcao nele. -->
+
+`yarn add @types/react-dom -D` <!--- Lib necessaria para que o Typescript reconheca libs de terceiros e que nao possuem tipagem definida por padrao. -->

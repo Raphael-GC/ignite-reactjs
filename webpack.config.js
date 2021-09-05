@@ -7,13 +7,13 @@ const isDevelopment = process.env.NODE_ENV !== 'production';
 module.exports = {
     mode: isDevelopment ? 'development' : 'production',
     devtool: isDevelopment ? 'eval-source-map' : 'source-map', // Faz com que visualizemos o codigo no console do devtool da mesma forma como ele esta no arquivo original e nao apos o bundle.
-    entry: path.resolve(__dirname, 'src', 'index.jsx'),
+    entry: path.resolve(__dirname, 'src', 'index.tsx'),
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
     },
     resolve: {
-        extensions: ['.js', '.jsx'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx'], // O x indica que temos componentes/html dentro do arquivo.
     },
     devServer: {
         contentBase: path.resolve(__dirname, 'public'),
@@ -29,7 +29,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.jsx$/,
+                test: /\.(j|t)sx$/, // O j e o t dentro do parenteses indica pro webpack que queremos que ele entenda tanto os arquivos jsx quanto tsx.
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
