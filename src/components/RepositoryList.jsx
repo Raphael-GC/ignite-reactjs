@@ -5,14 +5,6 @@ import '../styles/repositories.scss';
 
 
 
-// 
-
-const repository = {
-    name: 'unform',
-    description: "Forms in React",
-    link: "http://github.com/unform/unform"
-}
-
 export function RepositoryList() {
     const [repositories, setRepositories] = useState([]) // Sempre comecamos o estado com utilizando uma variavel do tipo que pretendemos armazenar. Como no caso aqui queremos uma lista, comecamos com um array vazio.
 
@@ -28,10 +20,9 @@ export function RepositoryList() {
             <h1>Lista de repositórios</h1>
 
             <ul>
-                <RepositoryItem repository={repository} />
-                <RepositoryItem repository={repository} />
-                <RepositoryItem repository={repository} />
-                <RepositoryItem repository={repository} />
+                {repositories.map(repository => {
+                    return <RepositoryItem key={repository.name} repository={repository} />
+                })} // Nesse caso nao usamos o .forEach pois ele nao retornaria nada, e queremos que para cada repo seja retornado um RepositoryItem, por isso usamos .map
             </ul>
         </section>
     )
