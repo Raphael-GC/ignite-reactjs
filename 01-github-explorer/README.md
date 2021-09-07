@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="https://raw.githubusercontent.com/raphael-gc/ignite-reactjs/main/01-github-explorer/assets/img/logo.svg" alt="Github Explorer" width="280"/>
+   <img src="https://raw.githubusercontent.com/raphael-gc/ignite-reactjs/main/01-github-explorer/assets/img/logo.svg" alt="Github Explorer" width="480"/>
 </p>
 
 <p align="center">
@@ -18,7 +18,7 @@
 
 - [Tecnologias](#computer-tecnologias)
 - [Dependências comentadas](#gear-dependências-comentadas)
-- [Executando](#construction_worker-executando)
+- [Executando](#construction_worker_medium_skin_tone-executando)
 - [Desafios](#atom_symbol-desafios)
 - [Autor](#computer-autor)
 - [Licença](#closed_book-licença)
