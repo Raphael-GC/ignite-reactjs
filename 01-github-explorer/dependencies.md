@@ -27,7 +27,7 @@
 
 `yarn add cross-env -D` <!--- Nos permite criar variaveis de ambiente, independentemente do SO que estivermos usando.-->
 
-`yarn add style-loader css-loader -D` <!--- Sao os LOADERS que utilizamos nas regras Webpack para que nosso arquivos CSS possam ser lidos pela aplicacao. ->
+`yarn add style-loader css-loader -D` <!--- Sao os LOADERS que utilizamos nas regras Webpack para que nosso arquivos CSS possam ser lidos pela aplicacao. -->
 
 `yarn add sass-loader -D` <!--- O mesmo dos loaders anteriores, mas este e especificos para arquivos SASS.-->
 
