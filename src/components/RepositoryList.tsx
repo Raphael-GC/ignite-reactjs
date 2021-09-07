@@ -18,7 +18,7 @@ export function RepositoryList() { // Passamos um tipo pra um estado usando os <
             .then(data => setRepositories(data))
 
     }, []);
-
+    // Nesse caso nao usamos o .forEach pois ele nao retornaria nada, e queremos que para cada repo seja retornado um RepositoryItem, por isso usamos .map
     return (
         <section className="repository-list">
             <h1>Lista de repositórios</h1>
@@ -26,7 +26,7 @@ export function RepositoryList() { // Passamos um tipo pra um estado usando os <
             <ul>
                 {repositories.map(repository => {
                     return <RepositoryItem key={repository.name} repository={repository} />
-                })} // Nesse caso nao usamos o .forEach pois ele nao retornaria nada, e queremos que para cada repo seja retornado um RepositoryItem, por isso usamos .map
+                })}
             </ul>
         </section>
     )
