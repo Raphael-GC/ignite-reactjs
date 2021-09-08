@@ -49,7 +49,7 @@ Este projeto foi feito utilizando as seguintes tecnologias:
 
 Acesse o arquivo [dependencies.md](https://github.com/Raphael-GC/ignite-reactjs/blob/main/01-github-explorer/dependencies.md) para visualizar minhas anotações acerca de cada uma delas. 
 
-# :👷🏾: Executando
+# 👷🏾 Executando
 
 ```bash
 # Clone o Repositório
