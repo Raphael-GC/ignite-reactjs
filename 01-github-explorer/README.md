@@ -18,7 +18,7 @@
 
 - [Tecnologias](#computer-tecnologias)
 - [Dependências comentadas](#gear-dependências-comentadas)
-- [Executando](#construction_worker_medium_skin_tone-executando)
+- [Executando](#👷🏾-executando)
 - [Desafios](#atom_symbol-desafios)
 - [Autor](#computer-autor)
 - [Licença](#closed_book-licença)
@@ -49,7 +49,7 @@ Este projeto foi feito utilizando as seguintes tecnologias:
 
 Acesse o arquivo [dependencies.md](https://github.com/Raphael-GC/ignite-reactjs/blob/main/01-github-explorer/dependencies.md) para visualizar minhas anotações acerca de cada uma delas. 
 
-# :construction_worker_medium_skin_tone: Executando
+# :👷🏾: Executando
 
 ```bash
 # Clone o Repositório
