@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="https://raw.githubusercontent.com/raphael-gc/ignite-reactjs/assets/img/logo.svg" alt="Ignite" width="180"/>
+   <img src="https://github.com/Raphael-GC/ignite-reactjs/blob/main/assets/img/logo.svg" alt="Ignite" width="180"/>
 </p>
 
 <p align="center">
